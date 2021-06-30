@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 44 JS - Niomic</title>
+</head>
+<body>
+    <h1>Tugas 44</h1>
+
+    <p>Jangan Ubah Warna yang ini</p>
+    <p>Rubah Warna yang ini</p>
+
+    <button onclick="myFunction()">Ubah Warna</button>
+
+    <script type="text/javascript">
+        function myFunction() {
+            var a = document.getElementsByTagName("p").item(1);
+            var c = document.createAttribute("style");
+            c.value = "color: blue;";
+            a.attributes.setNamedItem(c);
+        }
+    </script>
+</body>
+</html>
